@@ -6,9 +6,7 @@ class MP3Importer
   end
 
   def files
-    #load
-    @path.
-    #convert to mp3s
+    @file = Dir.entries("#{@path}").select { |file| file.include?('.mp3') }
   end
 
   def import
