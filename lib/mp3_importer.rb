@@ -6,3 +6,5 @@ class MP3Importer
       Song.new_by_filename(filename)
     }
   end
+
+end
