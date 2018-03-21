@@ -33,7 +33,7 @@ class Artist
     artist.save
     artist
   end
-  def self.find_or_create_by_name(name) #ok, gonna break this into different methods 3/3
+  def self.find_or_create_by_name(name) #3/3
     self.find(name) ? self.find(name) : self.create(name)
   end
 
