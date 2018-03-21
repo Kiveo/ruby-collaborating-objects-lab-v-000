@@ -16,7 +16,7 @@ class Song
 
   def self.new_by_filename(filename) #class method
     song = self.new #something to parse onto
-    song.title = filename.split(" - ")[1] #parse
+    song.name = filename.split(" - ")[1] #parse
     song #new song from filename
   end
 
