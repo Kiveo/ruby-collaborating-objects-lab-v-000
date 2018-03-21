@@ -14,7 +14,7 @@ class Song
     end
   end
 
-  def new_by_filename(filename)
+  def self.new_by_filename(filename)
     song = self.new #something to parse onto
     song.title = filename.split("-")[1] #parse
     song #new song from filename
