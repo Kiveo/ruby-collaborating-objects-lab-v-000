@@ -34,9 +34,9 @@ class Artist
     artist
   end
   def self.find_or_create_by_name(name) #ok, gonna break this into different methods 3/3
-    if self.find_by_name(name)
+    if self.find_by_name(name)  #if it can be detected, then detect it.
       self.find_by_name(name)
-    else
+    else                        #else, make it.
       self.create(name)
     end
 
