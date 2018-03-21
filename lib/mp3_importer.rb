@@ -1,6 +1,5 @@
 class MP3Importer
   attr_reader :filepath
-  attr_accessor :list_of_filenames
 
   def initialize(filepath)
     @filepath = filepath
