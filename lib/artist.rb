@@ -25,12 +25,12 @@ class Artist
     @@all << self
   end
 
-  def self.find_by_name(name) # 1/3
+  def self.find(name) # 1/3
     @@all.detect {|artist| artist.name == name}
   end
   def self.create(name)  #2/3
     artist = self.new(name)
-    artist.save #@@all << artist
+    artist.save
     artist
   end
   def self.find_or_create_by_name(name) #ok, gonna break this into different methods 3/3
