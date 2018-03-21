@@ -15,9 +15,11 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    song = self.new #something to parse onto
-    song.name = filename.split(" - ")[1] #parse
-    song #new song from filename
+    artist_name = filename.split(" - ")[0] #parse
+    song_name = filename.split(" - ")[1] #parse
+    song = self.new(song_name)
+    song.artist_name = artist_name
+    song
   end
 
 end
