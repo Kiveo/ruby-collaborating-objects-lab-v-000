@@ -30,7 +30,7 @@ class Artist
   end
   def self.create(name)  #2/3
     artist = self.new(name)
-    artist.save #@@all << artist
+    @@all << artist
     artist
   end
   def self.find_or_create_by_name(name) #ok, gonna break this into different methods 3/3
